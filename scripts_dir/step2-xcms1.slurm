@@ -6,8 +6,8 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=4gb
 #SBATCH --time=6:00:00
-#SBATCH --output=/vortexfs1/home/klongnecker/UntargCode/logfiles_dir/xcms1.out
-#SBATCH --error=/vortexfs1/home/klongnecker/UntargCode/logfiles_dir/xcms1.error
+#SBATCH --output=/vortexfs1/home/klongnecker/CMP017/logfiles_dir/xcms1.out
+#SBATCH --error=/vortexfs1/home/klongnecker/CMP017/logfiles_dir/xcms1.error
 #SBATCH --array=1-68%40 
 
 #this is the numbers for Erin's 502 files do 1 to 502 files in batches of 40. If I use this, update to match what I have
@@ -15,10 +15,10 @@
 #change output to just be xcms1.out and xcms1.error - I am not sure why I would want all the individual files
 #also change to sending in ionMode from the command line and using $ionMode in here
 
-dir="$HOME/UntargCode"
+dir="$HOME/CMP017"
 cd "$dir"
 
-in_dir="/vortexfs1/omics/kujawinski/data/SargPatch/SargPatch_MSn"
+in_dir="/vortexfs1/omics/kujawinski/data/CMP017"
 out_dir="$dir/output_dir/$SLURM_JOB_NAME"
 log_dir="$dir/logfiles_dir/$SLURM_JOB_NAME" #need a folder to hold the output results text files - there are zillions of them. 
 
