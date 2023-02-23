@@ -7,12 +7,12 @@
 #SBATCH --cpus-per-task=36
 #SBATCH --mem=175gb
 #SBATCH --time=01:00:00
-#SBATCH --output=/vortexfs1/home/klongnecker/UntargCode/logfiles_dir/xcms-combine.out
-#SBATCH --error=/vortexfs1/home/klongnecker/UntargCode/logfiles_dir/xcms-combine.error
+#SBATCH --output=/vortexfs1/home/klongnecker/CMP017/logfiles_dir/xcms-combine.out
+#SBATCH --error=/vortexfs1/home/klongnecker/CMP017/logfiles_dir/xcms-combine.error
 
-dir="$HOME/UntargCode"
+dir="$HOME/CMP017"
 
-in_dir="$HOME/UntargCode/output_dir/xcms1"
+in_dir="$HOME/CMP017/output_dir/xcms1"
 cd $in_dir
 
 log_dir="$dir/logfiles_dir"  

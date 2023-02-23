@@ -6,10 +6,10 @@
 #SBATCH --ntasks-per-node=36
 #SBATCH --mem=100gb
 #SBATCH --time=6:00:00
-#SBATCH --output=/vortexfs1/home/klongnecker/UntargCode/logfiles_dir/xcms2.out
-#SBATCH --error=/vortexfs1/home/klongnecker/UntargCode/logfiles_dir/xcms2.error
+#SBATCH --output=/vortexfs1/home/klongnecker/CMP017/logfiles_dir/xcms2.out
+#SBATCH --error=/vortexfs1/home/klongnecker/CMP017/logfiles_dir/xcms2.error
 
-dir="$HOME/UntargCode"
+dir="$HOME/CMP017"
 cd "$dir"
 
 in_dir="$dir/output_dir/xcms1"
